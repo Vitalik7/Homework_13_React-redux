@@ -1,9 +1,7 @@
-This is the example project with react and redux, with persist usage.
-To start the project, first install all packages with next command
+Homework 13. React-redux App
 
     npm install
-    
+
 And then run 
 
     npm start
-    
