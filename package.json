@@ -2,6 +2,7 @@
   "name": "redux-test",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://vitalik7.github.io/Homework_13_React-redux/",
   "dependencies": {
     "immutability-helper": "^2.6.4",
     "material-ui": "^0.20.0",
@@ -13,12 +14,26 @@
     "react-validation": "^3.0.7",
     "redux": "^3.7.2",
     "redux-persist": "^5.5.0",
-    "validator": "^9.4.0"
+    "validator": "^9.4.0",
+    "gh-pages": "^1.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "gh-pages-deploy": {
+    "staticpath": "dist",
+    "cname": "nope.org",
+    "prep": [
+      "build-sass",
+      "optimize-img"
+    ],
+    "post": [
+      "clean-source"
+    ],
+    "noprompt": false
   }
 }
